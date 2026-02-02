@@ -1,0 +1,615 @@
+# CraftMenu Wiki - Multi-Language Documentation
+# Built with MkDocs Material + mkdocs-static-i18n plugin
+
+site_name: CraftMenu Wiki
+site_url: https://craftmenu.github.io/wiki/
+site_author: Zodunix
+site_description: Professional 3D Menu System for Minecraft - Complete multi-language documentation
+
+# Repository
+repo_url: https://github.com/CraftMenu/wiki
+repo_name: CraftMenu/wiki
+edit_uri: edit/main/
+
+# Copyright
+copyright: Copyright &copy; 2026 Zodunix (Jesus Ruescas Junior). All Rights Reserved.
+
+# Theme Configuration
+theme:
+  name: material
+  language: en
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+
+  # Color Palette - Elegant Purple/Gold Theme
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  # Typography - Elegant Fonts
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+  # Features
+  features:
+    # - navigation.instant        # Instant loading (incompatible with i18n language switcher)
+    - navigation.tracking       # Anchor tracking
+    - navigation.tabs           # Top-level navigation tabs
+    - navigation.tabs.sticky    # Sticky tabs
+    - navigation.sections       # Sections in navigation
+    - navigation.expand         # Expand navigation by default
+    - navigation.path           # Breadcrumbs
+    - navigation.indexes        # Section index pages
+    - navigation.top            # Back to top button
+    - search.suggest            # Search suggestions
+    - search.highlight          # Highlight search terms
+    - search.share              # Share search results
+    - toc.follow                # Follow TOC
+    - content.code.copy         # Copy code button
+    - content.code.annotate     # Code annotations
+    - content.tabs.link         # Link content tabs
+
+# Multi-Language Plugin
+plugins:
+  - search:
+      lang:
+        - en
+        - pt
+        - es
+        - fr
+        - de
+        - it
+        - nl
+        - ru
+        - pl
+        - tr
+        - uk
+        - ar
+        - ja
+        - ko
+        - zh
+        - hi
+        - id
+        - th
+        - vi
+
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+
+      languages:
+        # English (default/base)
+        - locale: en
+          name: English
+          build: true
+          default: true
+          site_name: "CraftMenu Wiki"
+
+        # Portuguese (Brazil)
+        - locale: pt_BR
+          name: Português (Brasil)
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: pt-BR
+          nav_translations:
+            Home: Início
+            Features: Recursos
+            Installation: Instalação
+            User Guide: Guia do Usuário
+            Quick Start: Início Rápido
+            Menu Creation: Criação de Menus
+            Widgets: Widgets
+            Animations: Animações
+            Events: Eventos
+            Editor: Editor
+            Troubleshooting: Solução de Problemas
+            Texture System: Sistema de Texturas
+            Animation Examples: Exemplos de Animação
+
+        # Portuguese (Portugal)
+        - locale: pt_PT
+          name: Português (Portugal)
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: pt
+          nav_translations:
+            Home: Início
+            Features: Funcionalidades
+            Installation: Instalação
+            User Guide: Guia do Utilizador
+            Quick Start: Início Rápido
+            Menu Creation: Criação de Menus
+            Widgets: Widgets
+            Animations: Animações
+            Events: Eventos
+            Editor: Editor
+            Troubleshooting: Resolução de Problemas
+            Texture System: Sistema de Texturas
+            Animation Examples: Exemplos de Animação
+
+        # Spanish
+        - locale: es
+          name: Español
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: es
+          nav_translations:
+            Home: Inicio
+            Features: Características
+            Installation: Instalación
+            User Guide: Guía del Usuario
+            Quick Start: Inicio Rápido
+            Menu Creation: Creación de Menús
+            Widgets: Widgets
+            Animations: Animaciones
+            Events: Eventos
+            Editor: Editor
+            Troubleshooting: Solución de Problemas
+            Texture System: Sistema de Texturas
+            Animation Examples: Ejemplos de Animación
+
+        # French
+        - locale: fr
+          name: Français
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: fr
+          nav_translations:
+            Home: Accueil
+            Features: Fonctionnalités
+            Installation: Installation
+            User Guide: Guide de l'Utilisateur
+            Quick Start: Démarrage Rapide
+            Menu Creation: Création de Menus
+            Widgets: Widgets
+            Animations: Animations
+            Events: Événements
+            Editor: Éditeur
+            Troubleshooting: Dépannage
+            Texture System: Système de Textures
+            Animation Examples: Exemples d'Animation
+
+        # German
+        - locale: de
+          name: Deutsch
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: de
+          nav_translations:
+            Home: Startseite
+            Features: Funktionen
+            Installation: Installation
+            User Guide: Benutzerhandbuch
+            Quick Start: Schnellstart
+            Menu Creation: Menüerstellung
+            Widgets: Widgets
+            Animations: Animationen
+            Events: Ereignisse
+            Editor: Editor
+            Troubleshooting: Fehlerbehebung
+            Texture System: Textursystem
+            Animation Examples: Animationsbeispiele
+
+        # Italian
+        - locale: it
+          name: Italiano
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: it
+          nav_translations:
+            Home: Home
+            Features: Caratteristiche
+            Installation: Installazione
+            User Guide: Guida Utente
+            Quick Start: Avvio Rapido
+            Menu Creation: Creazione Menu
+            Widgets: Widget
+            Animations: Animazioni
+            Events: Eventi
+            Editor: Editor
+            Troubleshooting: Risoluzione Problemi
+            Texture System: Sistema Texture
+            Animation Examples: Esempi Animazione
+
+        # Dutch
+        - locale: nl
+          name: Nederlands
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: nl
+          nav_translations:
+            Home: Home
+            Features: Kenmerken
+            Installation: Installatie
+            User Guide: Gebruikershandleiding
+            Quick Start: Snelstart
+            Menu Creation: Menu Creatie
+            Widgets: Widgets
+            Animations: Animaties
+            Events: Gebeurtenissen
+            Editor: Editor
+            Troubleshooting: Probleemoplossing
+            Texture System: Textuur Systeem
+            Animation Examples: Animatie Voorbeelden
+
+        # Russian
+        - locale: ru
+          name: Русский
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: ru
+          nav_translations:
+            Home: Главная
+            Features: Возможности
+            Installation: Установка
+            User Guide: Руководство
+            Quick Start: Быстрый Старт
+            Menu Creation: Создание Меню
+            Widgets: Виджеты
+            Animations: Анимации
+            Events: События
+            Editor: Редактор
+            Troubleshooting: Устранение Неполадок
+            Texture System: Система Текстур
+            Animation Examples: Примеры Анимации
+
+        # Polish
+        - locale: pl
+          name: Polski
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: pl
+          nav_translations:
+            Home: Strona Główna
+            Features: Funkcje
+            Installation: Instalacja
+            User Guide: Przewodnik Użytkownika
+            Quick Start: Szybki Start
+            Menu Creation: Tworzenie Menu
+            Widgets: Widgety
+            Animations: Animacje
+            Events: Wydarzenia
+            Editor: Edytor
+            Troubleshooting: Rozwiązywanie Problemów
+            Texture System: System Tekstur
+            Animation Examples: Przykłady Animacji
+
+        # Turkish
+        - locale: tr
+          name: Türkçe
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: tr
+          nav_translations:
+            Home: Ana Sayfa
+            Features: Özellikler
+            Installation: Kurulum
+            User Guide: Kullanım Kılavuzu
+            Quick Start: Hızlı Başlangıç
+            Menu Creation: Menü Oluşturma
+            Widgets: Widget'lar
+            Animations: Animasyonlar
+            Events: Olaylar
+            Editor: Editör
+            Troubleshooting: Sorun Giderme
+            Texture System: Doku Sistemi
+            Animation Examples: Animasyon Örnekleri
+
+        # Ukrainian
+        - locale: uk
+          name: Українська
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: uk
+          nav_translations:
+            Home: Головна
+            Features: Можливості
+            Installation: Встановлення
+            User Guide: Посібник
+            Quick Start: Швидкий Старт
+            Menu Creation: Створення Меню
+            Widgets: Віджети
+            Animations: Анімації
+            Events: Події
+            Editor: Редактор
+            Troubleshooting: Усунення Неполадок
+            Texture System: Система Текстур
+            Animation Examples: Приклади Анімації
+
+        # Arabic
+        - locale: ar
+          name: العربية
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: ar
+          nav_translations:
+            Home: الرئيسية
+            Features: المميزات
+            Installation: التثبيت
+            User Guide: دليل المستخدم
+            Quick Start: بداية سريعة
+            Menu Creation: إنشاء القوائم
+            Widgets: الأدوات
+            Animations: الرسوم المتحركة
+            Events: الأحداث
+            Editor: المحرر
+            Troubleshooting: استكشاف الأخطاء
+            Texture System: نظام النسيج
+            Animation Examples: أمثلة الرسوم المتحركة
+
+        # Japanese
+        - locale: ja
+          name: 日本語
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: ja
+          nav_translations:
+            Home: ホーム
+            Features: 機能
+            Installation: インストール
+            User Guide: ユーザーガイド
+            Quick Start: クイックスタート
+            Menu Creation: メニュー作成
+            Widgets: ウィジェット
+            Animations: アニメーション
+            Events: イベント
+            Editor: エディター
+            Troubleshooting: トラブルシューティング
+            Texture System: テクスチャシステム
+            Animation Examples: アニメーション例
+
+        # Korean
+        - locale: ko
+          name: 한국어
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: ko
+          nav_translations:
+            Home: 홈
+            Features: 기능
+            Installation: 설치
+            User Guide: 사용자 가이드
+            Quick Start: 빠른 시작
+            Menu Creation: 메뉴 생성
+            Widgets: 위젯
+            Animations: 애니메이션
+            Events: 이벤트
+            Editor: 에디터
+            Troubleshooting: 문제 해결
+            Texture System: 텍스처 시스템
+            Animation Examples: 애니메이션 예제
+
+        # Chinese (Simplified)
+        - locale: zh
+          name: 简体中文
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: zh
+          nav_translations:
+            Home: 主页
+            Features: 功能
+            Installation: 安装
+            User Guide: 用户指南
+            Quick Start: 快速开始
+            Menu Creation: 菜单创建
+            Widgets: 小部件
+            Animations: 动画
+            Events: 事件
+            Editor: 编辑器
+            Troubleshooting: 故障排除
+            Texture System: 纹理系统
+            Animation Examples: 动画示例
+
+        # Hindi
+        - locale: hi
+          name: हिन्दी
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: hi
+          nav_translations:
+            Home: मुखपृष्ठ
+            Features: विशेषताएँ
+            Installation: स्थापना
+            User Guide: उपयोगकर्ता गाइड
+            Quick Start: त्वरित शुरुआत
+            Menu Creation: मेनू निर्माण
+            Widgets: विजेट
+            Animations: एनिमेशन
+            Events: घटनाएँ
+            Editor: संपादक
+            Troubleshooting: समस्या निवारण
+            Texture System: बनावट प्रणाली
+            Animation Examples: एनिमेशन उदाहरण
+
+        # Indonesian
+        - locale: id
+          name: Bahasa Indonesia
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: id
+          nav_translations:
+            Home: Beranda
+            Features: Fitur
+            Installation: Instalasi
+            User Guide: Panduan Pengguna
+            Quick Start: Mulai Cepat
+            Menu Creation: Pembuatan Menu
+            Widgets: Widget
+            Animations: Animasi
+            Events: Acara
+            Editor: Editor
+            Troubleshooting: Pemecahan Masalah
+            Texture System: Sistem Tekstur
+            Animation Examples: Contoh Animasi
+
+        # Thai
+        - locale: th
+          name: ไทย
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: th
+          nav_translations:
+            Home: หน้าแรก
+            Features: คุณสมบัติ
+            Installation: การติดตั้ง
+            User Guide: คู่มือผู้ใช้
+            Quick Start: เริ่มต้นอย่างรวดเร็ว
+            Menu Creation: การสร้างเมนู
+            Widgets: วิดเจ็ต
+            Animations: แอนิเมชั่น
+            Events: เหตุการณ์
+            Editor: ตัวแก้ไข
+            Troubleshooting: การแก้ไขปัญหา
+            Texture System: ระบบพื้นผิว
+            Animation Examples: ตัวอย่างแอนิเมชั่น
+
+        # Vietnamese
+        - locale: vi
+          name: Tiếng Việt
+          build: true
+          site_name: "CraftMenu Wiki"
+          theme:
+            language: vi
+          nav_translations:
+            Home: Trang Chủ
+            Features: Tính Năng
+            Installation: Cài Đặt
+            User Guide: Hướng Dẫn Người Dùng
+            Quick Start: Bắt Đầu Nhanh
+            Menu Creation: Tạo Menu
+            Widgets: Widget
+            Animations: Hoạt Hình
+            Events: Sự Kiện
+            Editor: Trình Chỉnh Sửa
+            Troubleshooting: Khắc Phục Sự Cố
+            Texture System: Hệ Thống Kết Cấu
+            Animation Examples: Ví Dụ Hoạt Hình
+
+# Navigation Structure
+nav:
+  - Home: index.md
+  - Features: FEATURES.md
+  - Quick Start: QUICKSTART.md
+  - User Guide:
+      - Installation: wiki/user/installation.md
+      - Commands: wiki/user/commands.md
+      - Menu Creation: wiki/user/menu-creation.md
+      - Widgets: wiki/user/widgets.md
+      - Animations: wiki/user/animations.md
+      - Events: wiki/user/events.md
+      - Editor: wiki/user/editor.md
+      - Troubleshooting: wiki/user/troubleshooting.md
+  - Advanced:
+      - Animation Examples: ANIMATION_EXAMPLES.md
+      - Menu Creation Guide: MENU_CREATION.md
+
+# Markdown Extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Extra Configuration
+extra:
+  generator: false  # Remove "Made with Material for MkDocs" footer
+
+  # Social Links
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/CraftMenu
+      name: CraftMenu on GitHub
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/craftmenu
+      name: Join our Discord
+
+  # Version
+  version:
+    provider: mike
+    default: stable
+
+  # Analytics (optional - add if needed)
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX
+
+# CSS Customization
+extra_css:
+  - stylesheets/extra.css
+
+# JavaScript Customization
+extra_javascript:
+  - javascripts/extra.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

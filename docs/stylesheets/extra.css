@@ -1,0 +1,312 @@
+/* ============================================================
+   CraftMenu Wiki - Elegant Purple/Gold Theme
+   ============================================================ */
+
+/* ===== CSS Variables ===== */
+:root {
+  /* Primary Colors - Violet */
+  --cm-violet: #7C3AED;
+  --cm-violet-light: #A78BFA;
+  --cm-violet-dark: #5B21B6;
+  --cm-violet-950: #4C1D95;
+
+  /* Accent Colors - Gold */
+  --cm-gold: #D4AF37;
+  --cm-gold-light: #F0D78C;
+  --cm-gold-dark: #B8962E;
+
+  /* Background Colors */
+  --cm-bg-light: #FAF5FF;
+  --cm-bg-dark: #1E1B4B;
+
+  /* Text Colors */
+  --cm-text-light: #4C1D95;
+  --cm-text-dark: #E9D5FF;
+
+  /* Shadows */
+  --cm-shadow-sm: 0 1px 2px rgba(124, 58, 237, 0.1);
+  --cm-shadow-md: 0 4px 6px rgba(124, 58, 237, 0.15);
+  --cm-shadow-lg: 0 10px 25px rgba(124, 58, 237, 0.2);
+  --cm-shadow-glow: 0 0 20px rgba(124, 58, 237, 0.4);
+}
+
+/* ===== Header Styling ===== */
+.md-header {
+  background: linear-gradient(135deg, var(--cm-violet-dark) 0%, var(--cm-violet) 50%, var(--cm-violet-light) 100%);
+  box-shadow: var(--cm-shadow-md);
+}
+
+.md-header__title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ===== Navigation Sidebar ===== */
+.md-nav__link {
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  margin: 2px 0;
+}
+
+.md-nav__link:hover {
+  color: var(--cm-gold) !important;
+  background: rgba(124, 58, 237, 0.08);
+  padding-left: 12px;
+}
+
+.md-nav__link--active {
+  color: var(--cm-violet) !important;
+  font-weight: 600;
+  border-left: 3px solid var(--cm-gold);
+  padding-left: 12px;
+  background: rgba(124, 58, 237, 0.1);
+}
+
+/* Sidebar section titles */
+.md-nav__item--nested > .md-nav__link {
+  font-weight: 600;
+  color: var(--cm-violet-dark);
+}
+
+/* ===== Links ===== */
+.md-content a:not(.md-button) {
+  color: var(--cm-violet);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.md-content a:not(.md-button):hover {
+  color: var(--cm-gold) !important;
+  border-bottom-color: var(--cm-gold);
+}
+
+/* ===== Buttons ===== */
+.md-button {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: none;
+}
+
+.md-button--primary {
+  background: linear-gradient(135deg, var(--cm-violet) 0%, var(--cm-violet-dark) 100%);
+  border: none;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
+}
+
+.md-button--primary:hover {
+  background: linear-gradient(135deg, var(--cm-violet-light) 0%, var(--cm-violet) 100%);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+  transform: translateY(-2px);
+}
+
+/* ===== Code Blocks ===== */
+.highlight {
+  border-radius: 8px;
+  border-left: 4px solid var(--cm-gold);
+  box-shadow: var(--cm-shadow-sm);
+  overflow: hidden;
+}
+
+.highlight pre {
+  margin: 0;
+}
+
+code {
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Inline code */
+.md-content code:not(.highlight code) {
+  background: rgba(124, 58, 237, 0.1);
+  color: var(--cm-violet-dark);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  color: var(--cm-violet-dark);
+  border-bottom: 2px solid var(--cm-gold);
+  padding-bottom: 0.5em;
+}
+
+h2 {
+  color: var(--cm-violet);
+  margin-top: 2em;
+}
+
+h3 {
+  color: var(--cm-violet-light);
+}
+
+/* ===== Content Area ===== */
+.md-content {
+  background: var(--md-default-bg-color);
+}
+
+.md-content__inner {
+  padding: 1.5rem 2rem;
+}
+
+/* ===== Tables ===== */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--cm-shadow-sm);
+}
+
+.md-typeset table:not([class]) th {
+  background: linear-gradient(135deg, var(--cm-violet) 0%, var(--cm-violet-dark) 100%);
+  color: white;
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background: rgba(124, 58, 237, 0.05);
+}
+
+/* ===== Admonitions ===== */
+.md-typeset .admonition {
+  border-radius: 8px;
+  box-shadow: var(--cm-shadow-sm);
+  border-left-width: 4px;
+}
+
+.md-typeset .admonition.note {
+  border-color: var(--cm-violet);
+}
+
+.md-typeset .admonition.tip {
+  border-color: var(--cm-gold);
+}
+
+.md-typeset .admonition-title {
+  font-weight: 600;
+}
+
+/* ===== Search ===== */
+.md-search__input {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.md-search__input:focus {
+  box-shadow: var(--cm-shadow-glow);
+}
+
+/* ===== Footer ===== */
+.md-footer {
+  background: linear-gradient(135deg, var(--cm-violet-950) 0%, var(--cm-bg-dark) 100%);
+}
+
+.md-footer-meta {
+  background: transparent;
+}
+
+/* ===== Dark Mode Refinements ===== */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #1a1625;
+  --md-primary-fg-color: var(--cm-violet-light);
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background: linear-gradient(135deg, #2d2250 0%, #3d3070 50%, #4d4090 100%);
+}
+
+[data-md-color-scheme="slate"] h1 {
+  color: var(--cm-violet-light);
+  border-bottom-color: var(--cm-gold);
+}
+
+[data-md-color-scheme="slate"] h2 {
+  color: var(--cm-violet-light);
+}
+
+[data-md-color-scheme="slate"] .md-content code:not(.highlight code) {
+  background: rgba(167, 139, 250, 0.2);
+  color: var(--cm-violet-light);
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: var(--cm-violet-light) !important;
+  background: rgba(167, 139, 250, 0.15);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: linear-gradient(135deg, #4d4090 0%, #3d3070 100%);
+}
+
+/* ===== Scrollbar Styling ===== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(124, 58, 237, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cm-violet);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cm-violet-dark);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.md-content__inner {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* ===== TOC (Table of Contents) ===== */
+.md-nav--secondary .md-nav__link--active {
+  color: var(--cm-gold) !important;
+}
+
+/* ===== Selection Highlight ===== */
+::selection {
+  background: rgba(124, 58, 237, 0.3);
+  color: var(--cm-violet-dark);
+}
+
+[data-md-color-scheme="slate"] ::selection {
+  background: rgba(167, 139, 250, 0.4);
+  color: white;
+}
+
+/* ===== Back to Top Button ===== */
+.md-top {
+  background: var(--cm-violet);
+  color: white;
+  border-radius: 50%;
+  box-shadow: var(--cm-shadow-md);
+}
+
+.md-top:hover {
+  background: var(--cm-gold);
+  transform: translateY(-3px);
+}
+
+/* ===== Copy Button in Code Blocks ===== */
+.md-clipboard {
+  color: var(--cm-violet-light);
+}
+
+.md-clipboard:hover {
+  color: var(--cm-gold);
+}
